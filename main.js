@@ -68,8 +68,8 @@ const selectCategories = () => {
 const paginate = (it) => {
   pagination.innerHTML = ``
   const ul = document.createElement('ul')
-  const everyPage = 12
-  const totalPageCount = Math.ceil(it.length / 12)
+  const everyPage = 10
+  const totalPageCount = Math.ceil(it.length / 10)
   const generatePages = (current) => {
     ul.innerHTML = ''
     for (let i = 1; i <= totalPageCount; i++) {
